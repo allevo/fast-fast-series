@@ -1,7 +1,7 @@
 'use strict'
 
 const t = require('tap')
-const ffi = require('./index')
+const ffs = require('./index')
 
 function func1 (obj, next) {
   obj.a += 1
@@ -32,7 +32,7 @@ t.test('one', t => {
 
   const obj = { a: 2 }
 
-  const f = ffi([
+  const f = ffs([
     func1,
     func2,
     func3,
@@ -52,7 +52,7 @@ t.test('one', t => {
 t.test('twice', t => {
   t.plan(2)
 
-  const f = ffi([
+  const f = ffs([
     func1,
     func2,
     func3,
@@ -72,7 +72,7 @@ t.test('twice', t => {
 t.test('error', t => {
   t.plan(2)
 
-  const f = ffi([
+  const f = ffs([
     func1,
     fail,
     func3,
@@ -95,7 +95,7 @@ t.test('this context', t => {
   const obj = { a: 2 }
   const self = { gg: 9 }
 
-  const f = ffi([
+  const f = ffs([
     func1,
     func4.bind(self),
     func3,

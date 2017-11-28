@@ -1,7 +1,7 @@
 {
-  "name": "fast-fast-iterator",
+  "name": "fast-fast-series",
   "version": "0.1.0",
-  "description": "Fast fast iterator",
+  "description": "Fast fast series",
   "main": "index.js",
   "scripts": {
     "lint": "standard | snazzy",
@@ -10,18 +10,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/allevo/fast-fast-iterator.git"
+    "url": "git+https://github.com/allevo/fast-fast-series.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/allevo/fast-fast-iterator/issues"
+    "url": "https://github.com/allevo/fast-fast-series/issues"
   },
-  "engines" : {
-    "node" : ">=4"
+  "engines": {
+    "node": ">=4"
   },
-  "homepage": "https://github.com/allevo/fast-fast-iterator#readme",
+  "homepage": "https://github.com/allevo/fast-fast-series#readme",
   "devDependencies": {
+    "pre-commit": "^1.2.2",
     "snazzy": "^7.0.0",
     "standard": "^10.0.3",
     "tap": "^11.0.0"

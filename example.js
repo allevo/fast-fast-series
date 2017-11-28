@@ -1,17 +1,6 @@
-# Fast Fast Series
+'use strict'
 
-Run as fast as possible your functions
-
-## Install
-
-```bash
-npm i --save fast-fast-series
-```
-
-## Usage
-
-```js
-const ffs = require('fast-fast-series')
+const ffs = require('./index')
 
 function func1 (obj, next) {
   obj.a += 1
@@ -42,14 +31,3 @@ const f = ffs([
 })
 
 f({ a: 3 })
-```
-
-Output:
-
-```
-{ a: 4, b: 6, c: 77 }
-```
-
-## License
-
-Licensed under [MIT](./LICENSE).
