@@ -1,0 +1,26 @@
+{
+  "name": "fast-fast-iterator",
+  "version": "0.1.0",
+  "description": "Fast fast iterator",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard | snazzy",
+    "unit": "tap *.test.js",
+    "test": "npm run lint && npm run unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allevo/fast-fast-iterator.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/allevo/fast-fast-iterator/issues"
+  },
+  "homepage": "https://github.com/allevo/fast-fast-iterator#readme",
+  "devDependencies": {
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.3",
+    "tap": "^11.0.0"
+  }
+}
